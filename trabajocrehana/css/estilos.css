@@ -1,0 +1,354 @@
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .contenedor {
+        width: 100%;
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+    /*cabecera*/
+    
+    header {
+        height: 80%;
+        background-color: #fcfff5;
+    }
+    
+    .logo {
+        padding: 25px 0;
+    }
+    
+    .logo img {
+        width: 100px;
+        display: block;
+        margin: auto;
+    }
+    
+    .menu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 480px;
+        margin: auto;
+        padding: 20px 0;
+    }
+    
+    .menu a {
+        text-decoration: none;
+        color: #7a7a7a;
+        text-transform: capitalize;
+        font-weight: 900;
+    }
+    
+    .menu a:hover {
+        color: #a4281f;
+    }
+    
+    @media all and (max-width: 600px) {
+        /*menu*/
+        .menu {
+            display: flex;
+            flex-direction: column;
+            padding: 20px 0;
+            align-items: center;
+        }
+        .menu a {
+            text-transform: uppercase;
+            padding: 5px;
+            text-align: justify;
+        }
+        /*conocenos*/
+        .nosotros {
+            padding: 10px;
+        }
+    }
+    /*banner*/
+    
+    .banner {
+        width: 100%;
+        height: 500px;
+        background-image: url(/img/f-2.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .banner>div {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(46, 46, 46, 0.534)
+    }
+    
+    .llamada {
+        text-align: center;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    
+    .llamada p {
+        font-size: 20px;
+        color: white;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        font-weight: 900;
+    }
+    
+    .llamada h1 {
+        font-size: 40px;
+        color: white;
+        width: 100%;
+        padding: 25px 0;
+        background-color: rgba(255, 251, 251, 0.288);
+        max-width: 480px;
+        border-radius: 3px;
+    }
+    
+    .llamada a {
+        text-decoration: none;
+        margin-top: 40px;
+        padding: 20px 40px;
+        color: white;
+        background-color: rgba(0, 0, 0, 1);
+        border-radius: 3px;
+        transition: all 0.3s ease;
+    }
+    
+    .llamada a:hover {
+        background-color: rgba(184, 16, 16, 0.2);
+    }
+    /*Nosotros*/
+    
+    .conocenos {
+        background-color: black;
+        margin-top: 1px;
+        width: 100%;
+    }
+    
+    .nosotros {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nosotros h2 {
+        text-align: center;
+        color: #fcfff5;
+        padding: 30px 0;
+    }
+    
+    .nosotros p {
+        width: 400px;
+        word-spacing: 2;
+        color: #fcfff5;
+        width: 100%;
+        max-width: 600px;
+    }
+    
+    .nosotros a {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        color: white;
+    }
+    /*informacion*/
+    
+    .informacion>.contenedor {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .informacion {
+        margin-top: 20px;
+    }
+    
+    .imgen2 {
+        width: 100%;
+        max-width: 570px;
+    }
+    
+    .imgen2 img {
+        width: 100%;
+        height: 300px;
+    }
+    
+    .nos2 {
+        text-align: center;
+        padding: 15px;
+        max-width: 400px;
+        margin-left: 20px;
+    }
+    
+    .nos2 h3 {
+        padding: 20px;
+        border-bottom: 1px solid rgba(151, 8, 8, 0.63);
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+    
+    .nos2 h5 {
+        padding-bottom: 20px;
+        text-transform: uppercase;
+    }
+    
+    .nos2 p {
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+    
+    .n3 a {
+        color: black;
+    }
+    /*Footer*/
+    
+    .footer {
+        background-color: black;
+        margin-top: 20px;
+        color: white;
+    }
+    
+    .foot {
+        display: block;
+        align-items: center;
+    }
+    
+    .anime {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        margin-left: 250px;
+    }
+    
+    .anime>img {
+        width: 100%;
+        max-width: 350px;
+        padding: 10px;
+    }
+    
+    .anime h3 {
+        padding: 20px 0;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    .anime p {
+        text-align: justify;
+        padding: 10px;
+        width: 400px;
+        height: 200px;
+    }
+    
+    .anime a {
+        margin-top: 200px;
+        text-decoration: none;
+        padding: 10px;
+        background-color: #a4281f;
+        color: #fcfff5;
+        border-radius: 30px;
+    }
+    
+    @media all and (max-width: 600px) {
+        .anime {
+            margin: 0 auto;
+            padding: 10px;
+        }
+        .anime img {
+            width: 80%;
+            padding: 10px;
+        }
+        .anime a {
+            margin-bottom: 20px;
+        }
+    }
+    
+    .foter2 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        margin-left: 250px;
+    }
+    
+    .foter2>img {
+        width: 100%;
+        max-width: 350px;
+        padding: 10px;
+    }
+    
+    .foter2 h3 {
+        padding: 20px 0;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    .foter2 p {
+        text-align: justify;
+        padding: 10px;
+        width: 400px;
+        height: 200px;
+    }
+    
+    .foter2 a {
+        margin-top: 200px;
+        text-decoration: none;
+        padding: 10px;
+        background-color: #a4281f;
+        color: #fcfff5;
+        border-radius: 30px;
+    }
+    
+    .foter2:hover {
+        background-color: rgba(0, 0, 0, 1);
+    }
+    
+    @media all and (max-width: 600px) {
+        .foter2 {
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        .foter2 img {
+            width: 80%;
+            padding: 20px;
+        }
+        .foter2 {
+            border-top: 1px solid white;
+        }
+    }
+    
+    .proyec {
+        width: 100%;
+        max-width: 758px;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+    
+    .proyec h4 {
+        text-align: center;
+        text-transform: uppercase;
+        padding: 20px 0;
+    }
+    
+    .proyec p {
+        text-align: justify;
+        padding: 10px;
+    }
+    
+    .copy p {
+        padding: 8px 0;
+        text-align: end;
+        background-color: white;
+        color: black;
+    }
